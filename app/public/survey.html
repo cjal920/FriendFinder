@@ -14,6 +14,63 @@
 <body>
 
 
-    
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+  <div id="results-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        ...
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function()  {
+     $("#submit").on("click", function(event) {
+       event.preventDefault();
+
+       function validateForm()  {
+         var isValid = true;
+         $(".form-control").each(function() {
+           if ($(this).val() === "")  {
+             isValid = false;
+           }
+         });
+         return isValid;
+       }
+
+       if (validateForm())  {
+         var userData = {
+           name: $("#name").val().trim(),
+           photo: $("#photo").val().trim(),
+           scores: [
+             $("#q1").val().trim(),
+             $("#q10").val().trim(),
+             $("#q11").val().trim(),
+             $("#q100").val().trim(),
+             $("#q101").val().trim(),
+             $("#q110").val().trim(),
+             $("#q111").val().trim(),
+             $("#q1000").val().trim(),
+             $("#q1001").val().trim(),
+             $("#q1010").val().trim(),
+           ]
+         };
+         
+         $.post("/api/friends", userData, function(data)  {
+           $("#match-name").text(data.name);
+           $("#match-img").attr("src", data.photo);
+
+           $("#results-modal").modal("toggle");
+
+         });
+       }  else  {
+          alert("Would you please be good enough to complete all fields before submitting?")
+       }
+     });
+    });
+  </script>
+
 </body>
 </html>

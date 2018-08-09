@@ -1,6 +1,22 @@
 var friendsArray = [{
-    "name": "Redmond",
-    "photo": "https://",
+    name: "Daniel Plainview",
+    photo: "http://www.imagejournal.org/wp-content/uploads/2016/05/There-Will-Be-Blood.jpg",
+    scores: [
+        1,
+        5,
+        4,
+        2,
+        3,
+        5,
+        3,
+        1,
+        4,
+        2
+    ]
+},
+{
+    "name": "Daniel Plainview",
+    "photo": "http://www.imagejournal.org/wp-content/uploads/2016/05/There-Will-Be-Blood.jpg",
     "scores": [
         1,
         5,
@@ -13,12 +29,54 @@ var friendsArray = [{
         4,
         2
     ]
-}]
-
-
-
-
-
-
+},
+{
+    "name": "Daniel Plainview",
+    "photo": "http://www.imagejournal.org/wp-content/uploads/2016/05/There-Will-Be-Blood.jpg",
+    "scores": [
+        1,
+        5,
+        4,
+        2,
+        3,
+        5,
+        3,
+        1,
+        4,
+        2
+    ]
+},
+{
+    "name": "Daniel Plainview",
+    "photo": "http://www.imagejournal.org/wp-content/uploads/2016/05/There-Will-Be-Blood.jpg",
+    "scores": [
+        1,
+        5,
+        4,
+        2,
+        3,
+        5,
+        3,
+        1,
+        4,
+        2
+    ]
+},
+{
+    "name": "Daniel Plainview",
+    "photo": "http://www.imagejournal.org/wp-content/uploads/2016/05/There-Will-Be-Blood.jpg",
+    "scores": [
+        1,
+        5,
+        4,
+        2,
+        3,
+        5,
+        3,
+        1,
+        4,
+        2
+    ]
+}];
 
 module.exports = friendsArray;
