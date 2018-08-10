@@ -4,18 +4,188 @@
   <meta charset="UTF-8">
   <title>Survey Page</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
 
 </head>
 <body>
 
+<div class="container">
+  <h2>The Questionnaire</h2>
+  <h3>About You</h3>
+  <h4>Your Name</h4>
+  <input type="text" id="name" class="form-control" required>
+  <h4>Your Photo</h4>
+  <input type="text" id="photo" class="form-control" required>
+
+<hr>
+<h3>
+  Question One
+</h3>
+<h4>
+  You would rather accomplish a lot in a short, hard life rather than accomplish very little in a long, easy one.
+</h4>
+<select class="chosen-select" id="q1">
+    <option value></option>
+    <option value="1">1 No Way In Hell</option>
+    <option value="2">2 Probably Not</option>
+    <option value="3">3 Could Really Go Either Way</option>
+    <option value="4">4 More Likely Than Not</option>
+    <option value="5">5 Hell Yes!</option>
+  </select>
+
+  <h3>
+      Question Two
+    </h3>
+    <h4>
+      You would rather accomplish a lot in a short, hard life rather than accomplish very little in a long, easy one.
+    </h4>
+    <select class="chosen-select" id="q1">
+        <option value></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+ <h3>
+  Question Three
+</h3>
+<h4>
+  You would rather accomplish a lot in a short, hard life rather than accomplish very little in a long, easy one.
+</h4>
+<select class="chosen-select" id="q1">
+    <option value></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+  </select>
+
+  <h3>
+      Question Four
+    </h3>
+    <h4>
+      You would rather accomplish a lot in a short, hard life rather than accomplish very little in a long, easy one.
+    </h4>
+    <select class="chosen-select" id="q1">
+        <option value></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+   
+      <h3>
+          Question Five
+        </h3>
+        <h4>
+          You would rather accomplish a lot in a short, hard life rather than accomplish very little in a long, easy one.
+        </h4>
+        <select class="chosen-select" id="q1">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+
+
+
+
+
+
+
+
+
+<!--
+  <div class="chosen-container chosen-container-single" style="width: 155px;" title id="q1_chosen">
+    <a class="chosen-single chosen-default">
+      <span>Select an Option</span>
+      <div>
+        <b></b>
+      </div>
+    </a>
+    <div class="chosen-drop">
+      <div class="chosen-search">
+        <input type="text" autocomplete="off">
+      </div>
+      <ul class="chosen-results"></ul>
+    </div>
+  </div>
+
+
+
+        
+<br><br><br><br><br><br>
+
+<div class="chosen-container chosen-container-single" style="width: 155px;" title id="q1_chosen">
+  <a class="chosen-single chosen-default">
+    <span>Select Your Response</span>
+    <div>
+      <b></b>
+    </div>
+  </a>
+  <div class="chosen-drop">
+    <div class="chosen-search">
+      <input type="text" autocomplete="off">
+    </div>
+    <ul class="chosen-results">
+      <li class="active-result" data-option-array-index="1" style="">1 Vehemently Disagree</li>
+      <li class="active-result" data-option-array-index="2" style="">2</li>
+      <li class="active-result" data-option-array-index="3" style="">3</li>
+      <li class="active-result" data-option-array-index="4" style="">4</li>
+      <li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li>
+    </ul>
+  </div>
+</div>
+-->
+<!--
+<h3>
+  Question Two
+</h3>
+<h4>
+  You consider yourself more religious than most.
+</h4>
+<select class="chosen-select" id="q2" style="display: none;"></select>
+<div class="chosen-container chosen-container-single" style="width: 155px;" title id="q2_chosen"></div>
+
+<h3>
+  Question Three
+</h3>
+<h4>
+  You have a great appreciation for the fine art of painting.
+</h4>
+<select class="chosen-select" id="q3" style="display: none;"></select>
+<div class="chosen-container chosen-container-single" style="width: 155px;" title id="q3_chosen"></div>
+
+get this dropdown to work
+
+
+
+
+
+
+
+
+
 
 
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+-->
+
+</hr>
+</div>
 
   <div id="results-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -26,50 +196,90 @@
   </div>
 
   <script type="text/javascript">
-    $(document).ready(function()  {
-     $("#submit").on("click", function(event) {
-       event.preventDefault();
+  //  $(document).ready(function()  {
 
-       function validateForm()  {
-         var isValid = true;
-         $(".form-control").each(function() {
-           if ($(this).val() === "")  {
-             isValid = false;
-           }
-         });
-         return isValid;
-       }
 
-       if (validateForm())  {
-         var userData = {
-           name: $("#name").val().trim(),
-           photo: $("#photo").val().trim(),
-           scores: [
-             $("#q1").val().trim(),
-             $("#q10").val().trim(),
-             $("#q11").val().trim(),
-             $("#q100").val().trim(),
-             $("#q101").val().trim(),
-             $("#q110").val().trim(),
-             $("#q111").val().trim(),
-             $("#q1000").val().trim(),
-             $("#q1001").val().trim(),
-             $("#q1010").val().trim(),
-           ]
-         };
-         
-         $.post("/api/friends", userData, function(data)  {
-           $("#match-name").text(data.name);
-           $("#match-img").attr("src", data.photo);
+    // Chosen CSS
+    var config = {
+      ".chosen-select": {},
+      ".chosen-select-deselect": {
+        allow_single_deselect: true
+      },
+      ".chosen-select-no-single": {
+        disable_search_threshold: 10
+      },
+      ".chosen-select-no-results": {
+        no_results_text: "Oops, nothing found!"
+      },
+      ".chosen-select-width": {
+        width: "95%"
+      }
+    };
 
-           $("#results-modal").modal("toggle");
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
 
-         });
-       }  else  {
-          alert("Would you please be good enough to complete all fields before submitting?")
-       }
-     });
+    // Capture the form inputs
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".chosen-select").each(function() {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled
+      if (validateForm()) {
+        // Create an object for the user"s data
+        var userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+
+        // AJAX post the data to the friends API.
+        $.post("/api/friends", userData, function(data) {
+
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+
+        });
+      } else {
+        alert("Would you please be good enough to complete all fields before submitting?");
+      }
     });
+ // });
+  
+
   </script>
 
 </body>
