@@ -10,7 +10,33 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
+<style>
+  #red-button {
+    background-color: #ff0000;
+    width: 350px;
+    height: 100px;
+    border-radius: 50px;
+  } 
+
+   #red-button:hover  {
+    background-color: #3a0000;
+   }
+
+    #blue-button {
+    background-color: #1100ff;
+    width: 350px;
+    height: 100px;
+    border-radius: 50px;
+  } 
+
+   #blue-button:hover  {
+    background-color: #09003a;
+   }
+
+
+</style>
+
 </head>
 
 <body>
@@ -21,12 +47,27 @@
       <h1>SOUL SEARCHER</h1>
       <hr>
       <h2>Do you believe your soul coexists as a famous fictional character in one of the infinite 
-        number of alternate realities, parallel universes or simulations they got running these days?
-        Click the red button if you do, the blue button if you don't.
+        number of alternate realities, parallel universes or simulations they got running out there
+        these days? Click the red button if you do, the blue button if you don't.
+      </h2>
 
-      <div>
-        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span></button></a>
+      <div class="row">
+        <div class="col-sm-6">
+
+            <div>
+                <a href="/survey"><button type="button" id="red-button" class="btn btn-lg"><span class="glyphicon glyphicon-list-alt"></span></button></a>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div>
+                <a href="/survey"><button type="button" id="blue-button" class="btn btn-lg"><span class="glyphicon glyphicon-list-alt"></span></button></a>
+              </div>
+            </div>
+
+
       </div>
+
 
     </div>
 
