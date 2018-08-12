@@ -16,7 +16,7 @@ var friends = [{
 },
 {
     name: "Fatima Blush from Never Say Never Again",
-    photo: "https://vignette.wikia.nocookie.net/villains/images/0/08/Fatima500full.jpg/revision/latest?cb=20170810231708&format=original",
+    photo: "https://cdn3.whatculture.com/images/2013/11/fatima-blush.jpg",
     scores: [
         5,
         2,
@@ -32,7 +32,7 @@ var friends = [{
 },
 {
     name: "Caprica Six from Battlestar Galactica",
-    photo: "https://pbs.twimg.com/profile_images/55403527/165_400x400.jpg",
+    photo: "https://battlestarrevealed.files.wordpress.com/2008/07/six.png",
     scores: [
         5,
         1,
@@ -160,7 +160,7 @@ var friends = [{
 },
 {
     name: "Daniel Plainview from There Will Be Blood",
-    photo: "http://www.imagejournal.org/wp-content/uploads/2016/05/There-Will-Be-Blood.jpg",
+    photo: "http://www.the-solute.com/wp-content/uploads/2017/06/There-Will-Be-Blood-640x360.jpg",
     scores: [
         1,
         4,
@@ -174,11 +174,6 @@ var friends = [{
         4
     ]
 },
-
-
-
-
-
 ];
 
 module.exports = friends;

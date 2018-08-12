@@ -4,33 +4,115 @@
 <head>
   <meta charset="UTF-8">
   <title>SoulSearcher</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Old+Standard+TT" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
+  <style>
+      body,
+      a  {
+        font-family: 'Cormorant Garamond', serif;
+        color: #4b3c13;
+      }
+
+      hr  {
+        padding: 10px;
+      }
+
+      h1  {
+        font-family: 'Amatic SC', cursive;
+        font-size: 200px;
+        text-align: center;
+      }
+
+      h2  {
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+        font-size: 150px;
+        padding: 40px;
+      }
+
+      h3, 
+      h4 {
+        font-family: 'Amatic SC', cursive;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      #name:hover,
+      #photo:hover  {
+        box-shadow: 2px 2px grey;
+      }
+
+      #red-button {
+        background-color: #ff0000;
+        width: 350px;
+        height: 100px;
+        border-radius: 50px;
+      } 
+    
+       #red-button:hover  {
+        background-color: #3a0000;
+       }
+    
+        #blue-button {
+        background-color: #0077ff;
+        width: 350px;
+        height: 100px;
+        border-radius: 50px;
+      } 
+    
+       #blue-button:hover  {
+        background-color: #001936;
+       }
+       
+      #submit {
+        font-family: 'Amatic SC', cursive;
+        background-color: #4b3c13;
+        border: #4b3c13;
+        width: 175px;
+        height: 50px;
+        border-radius: 50px;
+      } 
+    
+       #submit:hover  {
+        background-color: #ffffff;
+        color:#4b3c13;
+        border: #4b3c13 solid 1px;
+       }
+
+       #results-modal {
+         font-size: 40px;
+       }
+
+    </style>
 </head>
-
 <body>
-
   <div class="container">
-
-    <h2>Who (Else) Are You?</h2>
-    <hr>
-
-    <h3><strong>About You</strong></h3>
-    <h4>Your Name (in this reality)</h4>
-    <input type="text" id="name" class="form-control" required>
-
-    <h4>Your Photo (in this universe)</h4>
-    <input type="text" id="photo" class="form-control" required>
-
-    <hr>
-
-    <h3><strong>Question 1</strong></h3>
-    <h4>You identify as female.</h4>
+    <h2>You clicked wisely</h2>
+      <p>To get started we'll first need your name and a recent photo for our records in the event that one of those fictional characters takes the same survey and happens to find they share their soul wth you.</p>
+  <div class="row">
+    <div class="col-sm-6">   
+      <h4>NAME</h4>
+      <input type="text" id="name" class="form-control" required>
+    </div>
+    <div class="col-sm-6">   
+      <h4>PHOTO</h4>
+      <input type="text" id="photo" class="form-control" required>
+    </div>
+  </div>
+  <br>
+    <p>Now rank the following 10 statements from 1 to 5 and we'll reveal the character whose soul you share.</p>
+    <div class="row">
+      <div class="col-sm-6">
+          <hr>
+          <h3>STATEMENT ONE</h3>
+          <p>You identify as female.</p>
     <select class="chosen-select" id="q1">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -39,9 +121,12 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-    <h3><strong>Question 2</strong></h3>
-    <h4>You like to drink quite a lot of alcohol.</h4>
+          <hr>
+      </div>
+      <div class="col-sm-6">
+          <hr>
+          <h3>STATEMENT TWO</h3>
+          <p>You like to drink quite a lot of alcohol.</p>
     <select class="chosen-select" id="q2">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -50,11 +135,15 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-
-    <h3><strong>Question 3</strong></h3>
-    <h4>You possess great physical strength.</h4>
-    <select class="chosen-select" id="q3">
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6">
+        <hr>
+          <h3>STATEMENT THREE</h3>
+          <p>You possess tremendous physical strength.</p>
+          <select class="chosen-select" id="q3">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -62,11 +151,13 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-
-    <h3><strong>Question 4</strong></h3>
-    <h4>You generally like people.</h4>
-    <select class="chosen-select" id="q4">
+          <hr>
+      </div>
+      <div class="col-sm-6">
+          <hr>
+          <h3>STATEMENT FOUR</h3>
+          <p>You generally like people.</p>
+          <select class="chosen-select" id="q4">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -74,11 +165,15 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-
-    <h3><strong>Question 5</strong></h3>
-    <h4>You are a socialist.</h4>
-    <select class="chosen-select" id="q5">
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6">
+          <hr>
+          <h3>STATEMENT FIVE</h3>
+          <p>You are a socialist.</p>
+          <select class="chosen-select" id="q5">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -86,11 +181,13 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-
-    <h3><strong>Question 6</strong></h3>
-    <h4>You believe that revenge is a dish best served room temperature.</h4>
-    <select class="chosen-select" id="q6">
+          <hr>
+      </div>
+      <div class="col-sm-6">
+          <hr>
+          <h3>STATEMENT SIX</h3>
+          <p>You believe that revenge is a dish best served medium rare.</p>
+          <select class="chosen-select" id="q6">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -98,11 +195,15 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-
-    <h3><strong>Question 7</strong></h3>
-    <h4>You are ambitious.</h4>
-    <select class="chosen-select" id="q7">
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6">
+          <hr>
+          <h3>STATEMENT SEVEN</h3>
+          <p>You are ambitious.</p>
+          <select class="chosen-select" id="q7">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -110,10 +211,13 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-    <h3><strong>Question 8</strong></h3>
-    <h4>You struggle with monogamy.</h4>
-    <select class="chosen-select" id="q8">
+          <hr>
+      </div>
+      <div class="col-sm-6">
+          <hr>
+          <h3>STATEMENT EIGHT</h3>
+          <p>You struggle with monogamy.</p>
+          <select class="chosen-select" id="q8">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -121,10 +225,15 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-    <h3><strong>Question 9</strong></h3>
-    <h4>You prefer to be loved than feared.</h4>
-    <select class="chosen-select" id="q9">
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-6">
+          <hr>
+          <h3>STATEMENT NINE</h3>
+          <p>You prefer to be loved than feared.</p>
+          <select class="chosen-select" id="q9">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -132,10 +241,13 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-    <h3><strong>Question 10</strong></h3>
-    <h4>You think rather highly of yourself.</h4>
-    <select class="chosen-select" id="q10">
+          <hr>
+      </div>
+      <div class="col-sm-6">
+          <hr>
+          <h3>QUESTION TEN</h3>
+          <p>You think rather highly of yourself.</p>
+          <select class="chosen-select" id="q10">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -143,25 +255,22 @@
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
-
-    <br>
-    <br>
+      <hr>
+    </div>
+  </div>
 
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+     SUBMIT</button>
 
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/cjal920/FriendFinder/tree/master/app">GitHub Repo</a></p>
+        <p><a href="/api/friends">List of Souls</a> | <a href="https://github.com/cjal920/FriendFinder/">GitHub Repo</a></p>
       </div>
     </footer>
-
   </div>
-
   <div id="results-modal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -175,10 +284,8 @@
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-
     </div>
   </div>
-
   <script type="text/javascript">
 
     var config = {
@@ -246,9 +353,8 @@
         alert("Please be good enough to complete all fields before sending.");
       }
     });
+
   </script>
-
 </body>
-
 </html>
 
