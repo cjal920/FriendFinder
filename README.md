@@ -5,7 +5,7 @@ A variation of Friend Finder, this app takes in survey data from users to match 
       express
       body-parser
  
- Soul Searcher can be run on either locally:
+ Soul Searcher can be run either locally on:
  
       localhost: 8080
       
