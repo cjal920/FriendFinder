@@ -4,29 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <title>SoulSearcher</title>
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Old+Standard+TT" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Cormorant+Garamond:300|Josefin+Slab|Old+Standard+TT|Quicksand|" rel="stylesheet"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
   <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
   <style>
-      body,
-      a  {
-        font-family: 'Cormorant Garamond', serif;
-        color: #4b3c13;
-      }
+  body  {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #0cdf52;
+    background-color: #000803;
+  }
 
-      hr  {
-        padding: 10px;
-      }
+  a {
+    color: #0cdf52;
+  }
 
-      h1  {
-        font-family: 'Amatic SC', cursive;
-        font-size: 200px;
-        text-align: center;
-      }
+  hr  {
+      padding: 10px;
+  }
+
+  h1  {
+      font-family: 'Amatic SC', cursive;
+      font-size: 200px;
+      text-align: center;
+  }
 
       h2  {
         font-family: 'Amatic SC', cursive;
@@ -46,7 +50,7 @@
 
       #name:hover,
       #photo:hover  {
-        box-shadow: 2px 2px grey;
+        box-shadow: 2px 2px #0cdf52;
       }
 
       #red-button {
@@ -73,8 +77,9 @@
        
       #submit {
         font-family: 'Amatic SC', cursive;
-        background-color: #4b3c13;
-        border: #4b3c13;
+        color: #000803;
+        background-color: #0cdf52;
+        border: #0cdf52;
         width: 175px;
         height: 50px;
         border-radius: 50px;
@@ -82,12 +87,17 @@
     
        #submit:hover  {
         background-color: #ffffff;
-        color:#4b3c13;
-        border: #4b3c13 solid 1px;
+        color: #000803;
+        border: #0cdf52 solid 1px;
        }
 
        #results-modal {
-         font-size: 40px;
+         background-color: #000803;
+       }
+
+       .model-title {
+         color:#0cdf52;
+         font-size: 20px;
        }
 
     </style>
@@ -245,7 +255,7 @@
       </div>
       <div class="col-sm-6">
           <hr>
-          <h3>QUESTION TEN</h3>
+          <h3>STATEMENT TEN</h3>
           <p>You think rather highly of yourself.</p>
           <select class="chosen-select" id="q10">
       <option value=""></option>
@@ -274,7 +284,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <h2 class="modal-title">Your Soul Search Result</h2>
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
